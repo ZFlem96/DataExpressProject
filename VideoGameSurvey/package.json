@@ -1,0 +1,26 @@
+{
+  "name": "dataexpressproject",
+  "version": "1.0.0",
+  "description": "\"# DataExpressProject\"",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZFlem96/DataExpressProject.git"
+  },
+  "author": "i dunno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZFlem96/DataExpressProject/issues"
+  },
+  "homepage": "https://github.com/ZFlem96/DataExpressProject#readme"
+}
