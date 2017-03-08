@@ -66,3 +66,52 @@ exports.createEntry = function(req, res){
     });
     res.redirect('/');
 };
+
+exports.edit = function(req,res){
+    Entry.findById(req.params.id, function(err, vgsEntry){
+        if(err) return console.error(err);
+        res.render('edit',{vgsEntry: vgsEntry});
+    });
+};
+
+exports.editEntry = function(req, res){
+    Entry.findById(req.params.id, function(err, vgsEntry){
+        if(err) return console.error(err)
+        vgsEntry.name = req.body.name; 
+        vgsEntry.favoriteGameGenre = req.body.favoriteGameGenre;
+        vgsEntry.preferedPlatformer = req.body.preferedPlatformer;
+        vgsEntry.preferedShooter = req.body.preferedShooter;
+        vgsEntry.preferedOpenWorld = req.body.preferedOpenWorld;
+        vgsEntry.favoriteSportsGame = req.body.favoriteSportsGame;
+        vgsEntry.favoriteMOBA = req.body.favoriteMOBA;
+        vgsEntry.favoriteFighter = req.body.favoriteFighter;
+        vgsEntry.favoriteRacer = req.body.favoriteRacer;
+        vgsEntry.favoriteAction = req.body.favoriteAction;
+        vgsEntry.favoriteAdventure = req.body.favoriteAdventure;
+        vgsEntry.preferedStrategy = req.body.preferedStrategy;
+        vgsEntry.preferedSurvival = req.body.preferedSurvival;
+        vgsEntry.favoritePublisher = req.body.favoritePublisher;
+        vgsEntry.favoriteDeveloper = req.body.favoriteDeveloper;
+        vgsEntry.favoriteCharacter = req.body.favoriteCharacter;
+        vgsEntry.favoriteConsoleCreator = req.body.favoriteConsoleCreator;
+       vgsEntry.save(function (err,vgsentry) {
+        if (err) return console.error(err);
+            console.log(req.body.name + ' updated');
+        });
+    }); 
+    res.redirect('/');
+};
+
+exports.delete = function (req, res) {
+    Entry.findByIdAndRemove(req.params.id, function (err, vgsEntry) {
+        if (err) return console.error(err);
+        res.redirect('/');
+    }); 
+};
+
+exports.details = function (req, res) {
+    Entry.findById(req.params.id, function (err, vgsEntry) {
+        if (err) return console.error(err);
+        res.render('details',{ title: 'Video Game Survey List', vgsEntry: vgsEntry});
+    });  
+};
