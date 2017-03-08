@@ -1,0 +1,23 @@
+{
+    "questions": 
+    [
+        {"What is your favorite video game genre?": 
+        [
+            {"Shooter": 0},
+            {"RPG": 0},
+            {"Strategy": 0},
+            {"Puzzle": 0},
+            {"Hack 'n' Slash": 0},
+            {"Fighting": 0},
+            {"Sandbox": 0},
+            {"Platformer": 0},
+            {"MOBA": 0},
+            {"Horror": 0},
+            {"Party": 0},
+            {"Racing": 0},
+            {"Sports": 0},
+            {"Survival": 0}
+        ]
+        }
+    ]
+}
