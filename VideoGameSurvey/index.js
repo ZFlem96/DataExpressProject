@@ -7,6 +7,7 @@ var hash,
     route = require('./routes/routes.js'),
     mongoose = require('mongoose'),
     bcrypt = require('bcrypt-nodejs'),
+    cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser');
 
 
