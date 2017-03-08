@@ -1,0 +1,59 @@
+doctype
+html
+    head
+        title= title
+        link(href='/styles/style.css', rel='stylesheet')
+    body
+        h3 Video Game Survey List
+
+        table(class='gridtable')
+            tr
+                th Id
+                th Name
+                th Favorite Game Genre
+                th Prefered Platformer
+                th Prefered Shooter
+                th Prefered Open World
+                th Favorite Sports Game
+                th Favorite MOBA
+                th Favorite Fighter
+                th Favorite Racer
+                th Favorite Action
+                th Prefered Adventure
+                th Prefered Strategy
+                th Prefered Survival
+                th Favorite Publisher
+                th Favorite Developer
+                th Favorite Character
+                th Favorite Console Creator
+                th
+                th
+            each item in vgsEntry
+                tr
+                    td
+                        a(href='/details/' + item.id) #{item.id}
+                    td #{item.name}
+                    td #{item.favoriteGameGenre}
+                    td #{item.preferedPlatformer}
+                    td #{item.preferedShooter}
+                    td #{item.preferedOpenWorld}
+                    td #{item.favoriteSportsGame}
+                    td #{item.favoriteMOBA}
+                    td #{item.favoriteFighter}
+                    td #{item.favoriteRacer}
+                    td #{item.favoriteAction}
+                    td #{item.favoriteAdventure}
+                    td #{item.preferedStrategy}
+                    td #{item.preferedSurvival}
+                    td #{item.favoritePublisher}
+                    td #{item.favoriteDeveloper}
+                    td #{item.favoriteCharacter}
+                    td #{item.favoriteConsoleCreator}
+                    td
+                        a(href='/edit/' + item.id) Edit
+                    td
+                        a(href='/delete/' + item.id) Delete
+
+        p
+        #list
+            a(href='/create') Add data

@@ -14,4 +14,12 @@ app.use(express.static(path.join(__dirname + '/public')));
 
 var urlencodedParser = bodyParser.urlencoded({ extended: true })
 
+app.get('/', route.index);
+app.get('/create', route.create);
+app.get('/edit/:id', route.edit);
+app.get('/details/:id', route.details);
+app.post('/create', urlencodedParser, route.createEntry);
+app.post('/edit/:id', urlencodedParser, route.editEntry);
+app.get('/delete/:id', route.delete);
+
 app.listen(3000);
