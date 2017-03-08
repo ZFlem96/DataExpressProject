@@ -1,7 +1,12 @@
-var express = require('express'),
+var hash,
+    express = require('express'),
+    expressSession = require('express-session'),
     pug = require('pug'),
+    jade = require('jade'),
     path = require('path'),
     route = require('./routes/routes.js'),
+    mongoose = require('mongoose'),
+    bcrypt = require('bcrypt-nodejs'),
     bodyParser = require('body-parser');
 
 
