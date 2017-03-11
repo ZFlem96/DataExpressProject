@@ -115,3 +115,6 @@ exports.details = function (req, res) {
         res.render('details',{ title: 'Video Game Survey List', vgsEntry: vgsEntry});
     });  
 };
+exports.home = function(req, res){
+    res.render('home');
+};
