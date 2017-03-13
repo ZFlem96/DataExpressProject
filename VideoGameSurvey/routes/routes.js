@@ -116,5 +116,10 @@ exports.details = function (req, res) {
     });  
 };
 exports.home = function(req, res){
-    res.render('home');
+    Entry.findById(req.params.id, function (err, vgsEntry) {
+   if (err) return console.error(err);
+   
+    res.render('home', { vgsEntry: vgsEntry});    
+})
+    
 };

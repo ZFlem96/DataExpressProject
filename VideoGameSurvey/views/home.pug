@@ -2,35 +2,25 @@ doctype html
 html
   head
     script(type='text/javascript').
-      window.onload = function () {
-      var chart = new CanvasJS.Chart("chartContainer",
-      {
-      title:{
-      text: "Bar chart"
-      },
-      data: [
-      {
-      type: "bar",
-      dataPoints: [
-      { x: 10, y: 90, label:"Apple" },
-      { x: 20, y: 70, label:"Mango" },
-      { x: 30, y: 50, label:"Orange" },
-      { x: 40, y: 60, label:"Banana" },
-      { x: 50, y: 20, label:"Pineapple" },
-      { x: 60, y: 30, label:"Pears" },
-      { x: 70, y: 35, label:"Grapes" },
-      { x: 80, y: 40, label:"Lychee" },
-      { x: 90, y: 30, label:"Jackfruit" }
-      ]
-      }
-      ]
-      });
-      chart.render();
-      }
-    | &#x9;
     script(src='scripts/canvasjs.min.js')
-    | &#x9;
-    title CanvasJS Example
+    script(src='scripts/displayCharts.js')
+    title Home
   body
     #chartContainer(style='height: 400px; width: 100%;')
+    #chartContainer2(style='height: 400px; width: 100%;')
+    #chartContainer3(style='height: 400px; width: 100%;')
+    #chartContainer4(style='height: 400px; width: 100%;')
+    #chartContainer5(style='height: 400px; width: 100%;')
+    #chartContainer6(style='height: 400px; width: 100%;')
+    #chartContainer7(style='height: 400px; width: 100%;')
+    #chartContainer8(style='height: 400px; width: 100%;')
+    #chartContainer9(style='height: 400px; width: 100%;')
+    #chartContainer10(style='height: 400px; width: 100%;')
+    #chartContainer11(style='height: 400px; width: 100%;')
+    #chartContainer12(style='height: 400px; width: 100%;')
+    #chartContainer13(style='height: 400px; width: 100%;')
+    #chartContainer14(style='height: 400px; width: 100%;')
+    #chartContainer15(style='height: 400px; width: 100%;')
+    #chartContainer16(style='height: 400px; width: 100%;')
+    p
         a(href='/database') See Database.
