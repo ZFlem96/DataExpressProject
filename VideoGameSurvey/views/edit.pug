@@ -27,7 +27,7 @@ html
                 option(value="Racing") Racing
                 option(value="Sports") Sports
                 option(value="Survival") Survival 
-                option(value="None") None
+                option(value="Not A Fan") Not A Fan
             br
             label(for='preferedPlatformer') Prefered Platformer: 
             select(name='preferedPlatformer')
@@ -39,7 +39,7 @@ html
                 option(value="Metroid Prime") Metroid Prime
                 option(value="Salt and Sanctuary") Salt and Sanctuary
                 option(value="Mirror's Edge") Mirror's Edge
-                option(value="None") None 
+                option(value="Not A Fan") Not A Fan 
             br
             label(for='preferedShooter') Prefered Shooter: 
             select(name='preferedShooter')
@@ -58,7 +58,7 @@ html
                 option(value="Quake") Quake
                 option(value="Duke Nukem") Duke Nukem
                 option(value="Borderlands") Borderlands
-                option(value="None") None 
+                option(value="Not A Fan") Not A Fan 
             br
             label(for='preferedOpenWorld') Prefered Open World: 
             select(name='preferedOpenWorld')
@@ -70,16 +70,16 @@ html
                 option(value="Horizon: Zero Dawn") Horizon: Zero Dawn
                 option(value="Final Fantasy") Final Fantasy
                 option(value="Fable") Fable
-                option(value="None") None 
+                option(value="Not A Fan") Not A Fan 
             br
-            label(for='preferedSportsGame') Prefered Sports Game: 
-            select(name='preferedSportsGame')
-                option(selected = vgsEntry.preferedSportsGame) #{vgsEntry.preferedSportsGame}
+            label(for='favoriteSportsGame') Favorite Sports Game: 
+            select(name='favoriteSportsGame')
+                option(selected = vgsEntry.favoriteSportsGame) #{vgsEntry.favoriteSportsGame}
                 
                 option(value="Madden") Madden
                 option(value="FIFA") FIFA
                 option(value="NBA2K") NBA2K
-                option(value="None") None 
+                option(value="Not A Fan") Not A Fan 
             br
             label(for='favoriteMOBA') Favorite MOBA: 
             select(name='favoriteMOBA')
@@ -89,7 +89,7 @@ html
                 option(value="DOTA") DOTA
                 option(value="Smite") Smite
                 option(value="Heroes of the Storm") Heroes of the Storm
-                option(value="None") None
+                option(value="Not A Fan") Not A Fan
             br
             label(for='favoriteFighter') Favorite Fighter: 
             select(name='favoriteFighter')
@@ -104,7 +104,7 @@ html
                 option(value="Injustice") Injustice
                 option(value="Marvel Vs Capcom") Marvel Vs Capcom
                 option(value="Super Smash Bros") Super Smash Bros
-                option(value="None") None
+                option(value="Not A Fan") Not A Fan
             br
             label(for='favoriteRacer') Favorite Racer: 
             select(name='favoriteRacer')
@@ -114,7 +114,7 @@ html
                 option(value="Mario Kart") Mario Kart
                 option(value="Need for Speed") Need for Speed
                 option(value="Sega Allstar Racing") Sega Allstar Racing
-                option(value="None") None
+                option(value="Not A Fan") Not A Fan
             br
             label(for='favoriteAction') Favorite Non-Shooter/Non-Fighter Action Game: 
             select(name='favoriteAction')
@@ -126,7 +126,7 @@ html
                 option(value="Dante's Inferno") Dante's Inferno 
                 option(value="Shadow of Morder") Shadow of Morder
                 option(value="Ryse: Son of Rome") Ryse: Son of Rome
-                option(value="None") None
+                option(value="Not A Fan") Not A Fan
             br
             label(for='favoriteAdventure') Favorite Adventure: 
             select(name='favoriteAdventure')
@@ -135,11 +135,11 @@ html
                 option(value="Uncharted") Uncharted
                 option(value="Tomb Raider") Tomb Raider
                 option(value="Myst") Myst
-                option(value="None") None
+                option(value="Not A Fan") Not A Fan
             br
-            label(for='favoriteStrategy') Favorite Strategy: 
-            select(name='favoriteStrategy')
-                option(selected = vgsEntry.favoriteStrategy) #{vgsEntry.favoriteStrategy}
+            label(for='preferedStrategy') Prefered Strategy: 
+            select(name='preferedStrategy')
+                option(selected = vgsEntry.preferedStrategy) #{vgsEntry.preferedStrategy}
                 
                 option(value="Halo Wars") Halo Wars
                 option(value="Starcraft") Starcraft
@@ -147,18 +147,18 @@ html
                 option(value="Civilization") Civilization 
                 option(value="Homeworld") Homeworld
                 option(value="LotR: Battle for Middle Earth") LotR: Battle for Middle Earth
-                option(value="None") None
+                option(value="Not A Fan") Not A Fan
             br
-            label(for='favoriteSurvival') Favorite Survival: 
-            select(name='favoriteSurvival')
-                option(selected = vgsEntry.favoriteSurvival) #{vgsEntry.favoriteSurvival}
+            label(for='preferedSurvival') Prefered Survival: 
+            select(name='preferedSurvival')
+                option(selected = vgsEntry.preferedSurvival) #{vgsEntry.preferedSurvival}
                 
                 option(value="7 Days to Die") 7 Days to Die
                 option(value="Minecraft") Minecraft
                 option(value="Savage Lands") Savage Lands
                 option(value="Horizon: Zero Dawn") Horizon: Zero Dawn 
                 option(value="The Long Dark") The Long Dark
-                option(value="None") None
+                option(value="Not A Fan") Not A Fan
             br
             label(for='favoritePublisher') Favorite Publisher: 
             select(name='favoritePublisher')
@@ -170,7 +170,7 @@ html
                 option(value="Bethesda") Bethesda
                 option(value="Blizzard") Blizzard
                 option(value="2K") 2K 
-                option(value="None") None
+                option(value="Not A Fan") Not A Fan
             br
             label(for='favoriteDeveloper') Favorite Developer: 
             select(name='favoriteDeveloper')
@@ -181,7 +181,7 @@ html
                 option(value="Bethesda") Bethesda
                 option(value="Blizzard") Blizzard
                 option(value="Gearbox") Gearbox
-                option(value="None") None 
+                option(value="Not A Fan") Not A Fan 
             br
             label(for='favoriteCharacter') Favorite Character: 
             select(name='favoriteCharacter')
@@ -195,8 +195,8 @@ html
                 option(value="King Varian Wrynn") King Varian Wrynn
                 option(value="Cloud Strife") Cloud Strife
                 option(value="Soap MacTavish") Soap MacTavish
-                option(value="Sonic") Sonic the Hedgehog
-                option(value="None") None 
+                option(value="Sonic the Hedgehog") Sonic the Hedgehog
+                option(value="Not A Fan") Not A Fan 
             br
             label(for='favoriteConsoleCreator') Favorite Console Creator: 
             select(name='favoriteConsoleCreator')
@@ -206,7 +206,7 @@ html
                 option(value="Sega") Sega
                 option(value="Microsoft") Microsoft
                 option(value="Sony") Sony
-                option(value="None") None 
+                option(value="Not A Fan") Not A Fan 
             br
             input(type='submit', value='Update Entry')
 
