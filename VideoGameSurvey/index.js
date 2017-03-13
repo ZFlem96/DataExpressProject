@@ -20,7 +20,8 @@ app.use(express.static(path.join(__dirname + '/public')));
 
 var urlencodedParser = bodyParser.urlencoded({ extended: true })
 
-app.get('/', route.index);
+app.get('/', route.home);
+app.get('/database', route.index);
 app.get('/create', route.create);
 app.get('/edit/:id', route.edit);
 app.get('/details/:id', route.details);

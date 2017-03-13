@@ -18,6 +18,23 @@
             {"Sports": 0},
             {"Survival": 0}
         ]
+        },
+        {"What is your prefered console company?":
+        [
+            {"Nintendo": 0},
+            {"Sega": 0},
+            {"Microsoft": 0},
+            {"Sony": 0}
+        ]
+        },
+        {"What is your favorite Developer?":
+        [
+            {"Bungie": 0},
+            {"343 Industries": 0},
+            {"Bethesda": 0},
+            {"Blizzard": 0},
+            {"2K": 0}
+        ]
         }
     ]
 }
