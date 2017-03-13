@@ -4,7 +4,28 @@
 //  questions.Puzzle,
 //  questions.Hack 'n' Slash, 
 //  questions.RPG,
-var jsonData = { "questions":[
+/*
+{ x: 10, y: jsonData.questions.entries.Shooter, label:"Shooter" },
+      { x: 20, y: jsonData.questions.entries.RPG, label:"RPG" },
+      { x: 30, y: jsonData.questions.entries.Strategy, label:"Strategy" },
+      { x: 40, y: jsonData.questions.entries.Puzzle, label:"Puzzle" },
+      { x: 50, y: jsonData.questions.entries.HacknSlash, label:"Hack 'n' Slash" },
+      { x: 60, y: jsonData.questions.entries.Fighting, label:"Fighting" },
+      { x: 70, y: jsonData.questions.entries.Sandbox, label:"Open World" },
+      { x: 80, y: jsonData.questions.entries.Platformer, label:"Platformer" },
+      { x: 90, y: jsonData.questions.entries.MOBA, label:"MOBA" },
+      { x: 100, y: jsonData.questions.entries.Horror, label:"Horror" },
+      { x: 110, y: jsonData.questions.entries.Party, label:"Party" },
+      { x: 120, y: jsonData.questions.entries.Racing, label:"Racing" },
+      { x: 130, y: jsonData.questions.entries.Sports, label:"Sports" },
+      { x: 140, y: jsonData.questions.entries.Survival, label:"Survival" }
+*/
+var data = getEntry();
+var jsonData ={
+    "questions": 
+    [
+        {"What is your favorite video game genre?": 
+        [
             {"Shooter": 0},
             {"RPG": 0},
             {"Strategy": 0},
@@ -19,7 +40,10 @@ var jsonData = { "questions":[
             {"Racing": 0},
             {"Sports": 0},
             {"Survival": 0}
-        ]};
+        ]
+        }
+    ]
+};
 // var genreNums = [];
 function setJson(data){
 jsonData = data;
