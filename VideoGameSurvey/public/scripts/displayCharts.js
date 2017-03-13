@@ -4,7 +4,22 @@
 //  questions.Puzzle,
 //  questions.Hack 'n' Slash, 
 //  questions.RPG,
-var jsonData;
+var jsonData = { "questions":[
+            {"Shooter": 0},
+            {"RPG": 0},
+            {"Strategy": 0},
+            {"Puzzle": 0},
+            {"HacknSlash": 0},
+            {"Fighting": 1},
+            {"Sandbox": 0},
+            {"Platformer": 0},
+            {"MOBA": 0},
+            {"Horror": 0},
+            {"Party": 0},
+            {"Racing": 0},
+            {"Sports": 0},
+            {"Survival": 0}
+        ]};
 // var genreNums = [];
 function setJson(data){
 jsonData = data;
