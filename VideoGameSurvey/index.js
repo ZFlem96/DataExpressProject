@@ -1,5 +1,4 @@
-var hash,
-    express = require('express'),
+var express = require('express'),
     expressSession = require('express-session'),
     pug = require('pug'),
     jade = require('jade'),
@@ -10,7 +9,8 @@ var hash,
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser');
 
-
+//var salt = bcrypt.genSaltSync(10);
+//var hash = bcrypt.hashSync("",salt);
 var app = express();
 
 app.set('view engine', 'pug');
