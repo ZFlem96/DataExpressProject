@@ -11,7 +11,20 @@ html
                 th Id
                 th Name
                 th Favorite Game Genre
+                //- th Prefered Platformer
+                //- th Prefered Shooter
+                //- th Prefered Open World
+                //- th Favorite Sports Game
+                //- th Favorite MOBA
+                //- th Favorite Fighter
+                //- th Favorite Racer
+                //- th Favorite Action
+                //- th Prefered Adventure
+                //- th Prefered Strategy
+                //- th Prefered Survival
+                //- th Favorite Publisher
                 th Favorite Developer
+                //- th Favorite Character
                 th Favorite Console Creator
                 th
                 th
@@ -21,7 +34,20 @@ html
                         a(href='/details/' + item.id) #{item.id}
                     td #{item.name}
                     td #{item.favoriteGameGenre}
+                    //- td #{item.preferedPlatformer}
+                    //- td #{item.preferedShooter}
+                    //- td #{item.preferedOpenWorld}
+                    //- td #{item.favoriteSportsGame}
+                    //- td #{item.favoriteMOBA}
+                    //- td #{item.favoriteFighter}
+                    //- td #{item.favoriteRacer}
+                    //- td #{item.favoriteAction}
+                    //- td #{item.favoriteAdventure}
+                    //- td #{item.preferedStrategy}
+                    //- td #{item.preferedSurvival}
+                    //- td #{item.favoritePublisher}
                     td #{item.favoriteDeveloper}
+                    //- td #{item.favoriteCharacter}
                     td #{item.favoriteConsoleCreator}
                     td
                         a(href='/edit/' + item.id) Edit
@@ -30,5 +56,5 @@ html
 
         p
         #list
-            a(href='/create') Add data.  
-            a(href='/')   Go to home screen
+            a(href='/create') Add Data  
+            a(href='/')   Home

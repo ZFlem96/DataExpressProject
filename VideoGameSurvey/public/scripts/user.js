@@ -21,7 +21,7 @@ var UserSchema = new Schema({
     hash:{type: String}
 });
 
-// var Entry = mongoose.model('Users', UserSchema);
+// var Entry = mongoose.model('VideoGameSurvey', UserSchema);
 
 UserSchema.pre('save', function(next) {
     var user = this;

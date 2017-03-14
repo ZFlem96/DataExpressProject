@@ -10,7 +10,20 @@ var gameGenre = [], favDeveloper = [], favCompany = [];
 var vgsSchema = mongoose.Schema({
     name: String,
     favoriteGameGenre: String,
+    // preferedPlatformer: String,
+    // preferedShooter: String,
+    // preferedOpenWorld: String,
+    // favoriteSportsGame: String,
+    // favoriteMOBA: String,
+    // favoriteFighter: String,
+    // favoriteRacer: String,
+    // favoriteAction: String,
+    // favoriteAdventure: String,
+    // preferedStrategy: String,
+    // preferedSurvival: String,
+    // favoritePublisher: String,
     favoriteDeveloper: String,
+    // favoriteCharacter: String,
     favoriteConsoleCreator: String
 });
 
@@ -31,7 +44,20 @@ exports.createEntry = function(req, res){
     var vgsEntry = new Entry({
         name: req.body.name, 
         favoriteGameGenre: req.body.favoriteGameGenre,
+        // preferedPlatformer: req.body.preferedPlatformer,
+        // preferedShooter: req.body.preferedShooter,
+        // preferedOpenWorld: req.body.preferedOpenWorld,
+        // favoriteSportsGame: req.body.favoriteSportsGame,
+        // favoriteMOBA: req.body.favoriteMOBA,
+        // favoriteFighter: req.body.favoriteFighter,
+        // favoriteRacer: req.body.favoriteRacer,
+        // favoriteAction: req.body.favoriteAction,
+        // favoriteAdventure: req.body.favoriteAdventure,
+        // preferedStrategy: req.body.preferedStrategy,
+        // preferedSurvival: req.body.preferedSurvival,
+        // favoritePublisher: req.body.favoritePublisher,
         favoriteDeveloper: req.body.favoriteDeveloper,
+        // favoriteCharacter: req.body.favoriteCharacter,
         favoriteConsoleCreator: req.body.favoriteConsoleCreator
     });
     vgsEntry.save(function(err, vgsEntry){
@@ -53,7 +79,20 @@ exports.editEntry = function(req, res){
         if(err) return console.error(err)
         vgsEntry.name = req.body.name; 
         vgsEntry.favoriteGameGenre = req.body.favoriteGameGenre;
+        // vgsEntry.preferedPlatformer = req.body.preferedPlatformer;
+        // vgsEntry.preferedShooter = req.body.preferedShooter;
+        // vgsEntry.preferedOpenWorld = req.body.preferedOpenWorld;
+        // vgsEntry.favoriteSportsGame = req.body.favoriteSportsGame;
+        // vgsEntry.favoriteMOBA = req.body.favoriteMOBA;
+        // vgsEntry.favoriteFighter = req.body.favoriteFighter;
+        // vgsEntry.favoriteRacer = req.body.favoriteRacer;
+        // vgsEntry.favoriteAction = req.body.favoriteAction;
+        // vgsEntry.favoriteAdventure = req.body.favoriteAdventure;
+        // vgsEntry.preferedStrategy = req.body.preferedStrategy;
+        // vgsEntry.preferedSurvival = req.body.preferedSurvival;
+        // vgsEntry.favoritePublisher = req.body.favoritePublisher;
         vgsEntry.favoriteDeveloper = req.body.favoriteDeveloper;
+        // vgsEntry.favoriteCharacter = req.body.favoriteCharacter;
         vgsEntry.favoriteConsoleCreator = req.body.favoriteConsoleCreator;
        vgsEntry.save(function (err,vgsentry) {
         if (err) return console.error(err);
