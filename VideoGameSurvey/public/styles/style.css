@@ -3,6 +3,23 @@ body {
     font-size:12px;
 }
 
+html {
+    background-color: #D1D3FF;
+}
+
+body {
+    align-content: center;
+    margin: 20px;
+}
+
+h3 {
+    margin-left: 10px;
+}
+
+label {
+    margin-bottom: 100px;
+}
+
 table.gridtable {
     color:#333333;
     border-width: 1px;

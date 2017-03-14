@@ -16,7 +16,7 @@ var UserSchema = new Schema({
     password: { type: String, required: true },
     userlevel: { type: String},
     email: { type: String},
-    age:{ type: GLuint},
+    age:{ type: String},
     answers:{type: JSON},
     hash:{type: String}
 });
