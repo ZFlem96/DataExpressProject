@@ -1,26 +1,21 @@
 doctype html
 html
   head
-    script(type='text/javascript').
+    script(id='jsonData' type='application/json')
+      //- var jData = JSON.parse($("#vgsEntry").html());    
+    script(type='text/javascript')
     script(src='scripts/canvasjs.min.js')
     script(src='scripts/displayCharts.js')
     title Home
   body
-    #chartContainer(style='height: 400px; width: 100%;')
+    div(id="genreId" src = 'questions.json')
+    #chartContainer(style='height: 400px; width: 100%;' )
+    div(id="developerId" src = 'questions.json')
     #chartContainer2(style='height: 400px; width: 100%;')
+    div(id="creatorId" src = 'questions.json')
     #chartContainer3(style='height: 400px; width: 100%;')
-    #chartContainer4(style='height: 400px; width: 100%;')
-    #chartContainer5(style='height: 400px; width: 100%;')
-    #chartContainer6(style='height: 400px; width: 100%;')
-    #chartContainer7(style='height: 400px; width: 100%;')
-    #chartContainer8(style='height: 400px; width: 100%;')
-    #chartContainer9(style='height: 400px; width: 100%;')
-    #chartContainer10(style='height: 400px; width: 100%;')
-    #chartContainer11(style='height: 400px; width: 100%;')
-    #chartContainer12(style='height: 400px; width: 100%;')
-    #chartContainer13(style='height: 400px; width: 100%;')
-    #chartContainer14(style='height: 400px; width: 100%;')
-    #chartContainer15(style='height: 400px; width: 100%;')
-    #chartContainer16(style='height: 400px; width: 100%;')
     p
         a(href='/database') See Database.
+//- src = vgsEntry.favoriteGameGenre
+//- src = vgsEntry.favoriteDeveloper
+//- src = vgsEntry.favoriteConsoleCreator

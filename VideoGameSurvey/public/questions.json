@@ -1,7 +1,7 @@
 {
     "questions": 
     [
-        {"What is your favorite video game genre?": 
+        {"GameGenre": 
         [
             {"Shooter": 0},
             {"RPG": 0},
@@ -19,7 +19,7 @@
             {"Survival": 0}
         ]
         },
-        {"What is your prefered console company?":
+        {"Company":
         [
             {"Nintendo": 0},
             {"Sega": 0},
@@ -27,13 +27,13 @@
             {"Sony": 0}
         ]
         },
-        {"What is your favorite Developer?":
+        {"Developer":
         [
             {"Bungie": 0},
-            {"343 Industries": 0},
+            {"Industries343": 0},
             {"Bethesda": 0},
             {"Blizzard": 0},
-            {"2K": 0}
+            {"K2": 0}
         ]
         }
     ]
