@@ -6,25 +6,27 @@ html
     body
         h3 Entry Details
         form(id='form', method='post', action='/create')
-            label(for='name') Name: 
-            input(type='text', name='name')
+            div(class='input_div')
+                label(class='input_label' for='name') Name: 
+                input(type='text', name='name')
             br
-            label(for='favoriteGameGenre') Favorite Game Genre: 
-            select(name='favoriteGameGenre')
-                option(value="Shooter") Shooter
-                option(value="RPG") RPG
-                option(value="Strategy") Strategy
-                option(value="Puzzle") Puzzle
-                option(value="HacknSlash") Hack 'n' Slash
-                option(value="Fighting") Fighting
-                option(value="Open World") Open World
-                option(value="Platformer") Platformer
-                option(value="MOBA") MOBA
-                option(value="Horror") Horror
-                option(value="Party") Party
-                option(value="Racing") Racing
-                option(value="Sports") Sports
-                option(value="Survival") Survival 
+            div(class='input_div')
+                label(class='input_label' for='favoriteGameGenre') Favorite Game Genre: 
+                select(name='favoriteGameGenre')
+                    option(value="Shooter") Shooter
+                    option(value="RPG") RPG
+                    option(value="Strategy") Strategy
+                    option(value="Puzzle") Puzzle
+                    option(value="HacknSlash") Hack 'n' Slash
+                    option(value="Fighting") Fighting
+                    option(value="Open World") Open World
+                    option(value="Platformer") Platformer
+                    option(value="MOBA") MOBA
+                    option(value="Horror") Horror
+                    option(value="Party") Party
+                    option(value="Racing") Racing
+                    option(value="Sports") Sports
+                    option(value="Survival") Survival 
             br
             //- label(for='preferedPlatformer') Prefered Platformer: 
             //- select(name='preferedPlatformer')
@@ -145,14 +147,15 @@ html
             //-     option(value="2K") 2K 
             //-     option(value="Not A Fan") Not A Fan
             //- br
-            label(for='favoriteDeveloper') Favorite Developer: 
-            select(name='favoriteDeveloper')
-                option(value="Bungie") Bungie
-                option(value="343 Industries") 343 Industries
-                option(value="Bethesda") Bethesda
-                option(value="Blizzard") Blizzard
-                option(value="Gearbox") Gearbox
-                option(value="Not A Fan") Not A Fan 
+            div(class='input_div')   
+                label(class='input_label' for='favoriteDeveloper') Favorite Developer: 
+                select(name='favoriteDeveloper')
+                    option(value="Bungie") Bungie
+                    option(value="343 Industries") 343 Industries
+                    option(value="Bethesda") Bethesda
+                    option(value="Blizzard") Blizzard
+                    option(value="Gearbox") Gearbox
+                    option(value="Not A Fan") Not A Fan 
             br
             //- label(for='favoriteCharacter') Favorite Character: 
             //- select(name='favoriteCharacter')
@@ -167,12 +170,13 @@ html
             //-     option(value="Sonic the Hedgehog") Sonic the Hedgehog
             //-     option(value="Not A Fan") Not A Fan 
             //- br
-            label(for='favoriteConsoleCreator') Favorite Console Creator: 
-            select(name='favoriteConsoleCreator')
-                option(value="Nintendo") Nintendo
-                option(value="Sega") Sega
-                option(value="Microsoft") Microsoft
-                option(value="Sony") Sony 
-                option(value="Not A Fan") Not A Fan
+            div(class='input_div')
+                label(class='input_label' for='favoriteConsoleCreator') Favorite Console Creator: 
+                select(name='favoriteConsoleCreator')
+                    option(value="Nintendo") Nintendo
+                    option(value="Sega") Sega
+                    option(value="Microsoft") Microsoft
+                    option(value="Sony") Sony 
+                    option(value="Not A Fan") Not A Fan
             br
-            input(type='submit', value='Add Entry')
+            input(class='submit_button' type='submit', value='Add Entry')

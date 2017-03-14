@@ -16,27 +16,58 @@ h3 {
     margin-left: 10px;
 }
 
-label {
-    margin-bottom: 100px;
+form {
+    padding: 15px;
+}
+
+.input_label {
+    margin-right: 5px;
+    line-height: 25px;
+}
+
+.input_div {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+}
+
+.submit_button {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+a {
+    color: #42467F;
+    text-decoration: none;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+    margin: 5px;
+}
+
+a:hover {
+    color: #6A6FCC
 }
 
 table.gridtable {
     color:#333333;
-    border-width: 1px;
-    border-color: #666666;
+    border-width: 2px;
+    border-color: #42467F;
     border-collapse: collapse;
 }
 table.gridtable th {
-    border-width: 1px;
+    border-width: 2px;
     padding: 8px;
     border-style: solid;
-    border-color: #666666;
-    background-color: #dedede;
+    border-color: #42467F;
+    background-color: #848BFF;
 }
 table.gridtable td {
-    border-width: 1px;
+    border-width: 2px;
     padding: 8px;
     border-style: solid;
-    border-color: #666666;
-    background-color: #ffffff;
+    border-color: #42467F;
+    background-color: #D1D3FF;
 }

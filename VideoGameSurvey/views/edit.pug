@@ -6,207 +6,211 @@ html
     body
         h3 Edit Entry
         form(id='form', method='post', action='/edit/' + vgsEntry.id)
-            label(for='name') Name: 
-            input(type='text', name='name' value=vgsEntry.name)
+            div(class='input_div')
+                label(class='input_label' for='name') Name: 
+                input(type='text', name='name' value=vgsEntry.name)
             br
-            label(for='favoriteGameGenre') Favorite Game Genre: 
-            select(name='favoriteGameGenre')
-                option(selected = vgsEntry.favoriteGameGenre) #{vgsEntry.favoriteGameGenre}
-                
-                option(value="Shooter") Shooter
-                option(value="RPG") RPG
-                option(value="Strategy") Strategy
-                option(value="Puzzle") Puzzle
-                option(value="HacknSlash") Hack 'n' Slash
-                option(value="Fighting") Fighting
-                option(value="Open World") Open World
-                option(value="Platformer") Platformer
-                option(value="MOBA") MOBA
-                option(value="Horror") Horror
-                option(value="Party") Party
-                option(value="Racing") Racing
-                option(value="Sports") Sports
-                option(value="Survival") Survival 
-                option(value="Not A Fan") Not A Fan
+            div(class='input_div')    
+                label(class='input_label' for='favoriteGameGenre') Favorite Game Genre: 
+                select(name='favoriteGameGenre')
+                    option(selected = vgsEntry.favoriteGameGenre) #{vgsEntry.favoriteGameGenre}
+                    
+                    option(value="Shooter") Shooter
+                    option(value="RPG") RPG
+                    option(value="Strategy") Strategy
+                    option(value="Puzzle") Puzzle
+                    option(value="HacknSlash") Hack 'n' Slash
+                    option(value="Fighting") Fighting
+                    option(value="Open World") Open World
+                    option(value="Platformer") Platformer
+                    option(value="MOBA") MOBA
+                    option(value="Horror") Horror
+                    option(value="Party") Party
+                    option(value="Racing") Racing
+                    option(value="Sports") Sports
+                    option(value="Survival") Survival 
+                    option(value="Not A Fan") Not A Fan
             br
-            label(for='preferedPlatformer') Prefered Platformer: 
-            select(name='preferedPlatformer')
-                option(selected = vgsEntry.preferedPlatformer) #{vgsEntry.preferedPlatformer}
+            //- label(for='preferedPlatformer') Prefered Platformer: 
+            //- select(name='preferedPlatformer')
+            //-     option(selected = vgsEntry.preferedPlatformer) #{vgsEntry.preferedPlatformer}
                 
-                option(value="Mario") Mario
-                option(value="Unravle") Unravle
-                option(value="Limbo/Inside") Limbo/Inside
-                option(value="Metroid Prime") Metroid Prime
-                option(value="Salt and Sanctuary") Salt and Sanctuary
-                option(value="Mirror's Edge") Mirror's Edge
-                option(value="Not A Fan") Not A Fan 
+            //-     option(value="Mario") Mario
+            //-     option(value="Unravle") Unravle
+            //-     option(value="Limbo/Inside") Limbo/Inside
+            //-     option(value="Metroid Prime") Metroid Prime
+            //-     option(value="Salt and Sanctuary") Salt and Sanctuary
+            //-     option(value="Mirror's Edge") Mirror's Edge
+            //-     option(value="Not A Fan") Not A Fan 
+            //- br
+            //- label(for='preferedShooter') Prefered Shooter: 
+            //- select(name='preferedShooter')
+            //-     option(selected = vgsEntry.preferedShooter) #{vgsEntry.preferedShooter}
+                
+            //-     option(value="Halo") Halo
+            //-     option(value="Call of Duty") Call of Duty
+            //-     option(value="Battlefield") Battlefield
+            //-     option(value="Overwatch") Overwatch
+            //-     option(value="Rainbow Six") Rainbow Six
+            //-     option(value="Counter Strike") Counter Strike
+            //-     option(value="Crysis") Crysis
+            //-     option(value="Dark Void") Dark Void
+            //-     option(value="DOOM") DOOM
+            //-     option(value="Overwatch") Overwatch
+            //-     option(value="Quake") Quake
+            //-     option(value="Duke Nukem") Duke Nukem
+            //-     option(value="Borderlands") Borderlands
+            //-     option(value="Not A Fan") Not A Fan 
+            //- br
+            //- label(for='preferedOpenWorld') Prefered Open World: 
+            //- select(name='preferedOpenWorld')
+            //-     option(selected = vgsEntry.preferedOpenWorld) #{vgsEntry.preferedOpenWorld}
+                
+            //-     option(value="The Elder Scrolls") The Elder Scrolls
+            //-     option(value="Fallout") Fallout
+            //-     option(value="Assassin's Creed") Assassin's Creed
+            //-     option(value="Horizon: Zero Dawn") Horizon: Zero Dawn
+            //-     option(value="Final Fantasy") Final Fantasy
+            //-     option(value="Fable") Fable
+            //-     option(value="Not A Fan") Not A Fan 
+            //- br
+            //- label(for='favoriteSportsGame') Favorite Sports Game: 
+            //- select(name='favoriteSportsGame')
+            //-     option(selected = vgsEntry.favoriteSportsGame) #{vgsEntry.favoriteSportsGame}
+                
+            //-     option(value="Madden") Madden
+            //-     option(value="FIFA") FIFA
+            //-     option(value="NBA2K") NBA2K
+            //-     option(value="Not A Fan") Not A Fan 
+            //- br
+            //- label(for='favoriteMOBA') Favorite MOBA: 
+            //- select(name='favoriteMOBA')
+            //-     option(selected = vgsEntry.favoriteMOBA) #{vgsEntry.favoriteMOBA}
+                
+            //-     option(value="League of Legends") League of Legends
+            //-     option(value="DOTA") DOTA
+            //-     option(value="Smite") Smite
+            //-     option(value="Heroes of the Storm") Heroes of the Storm
+            //-     option(value="Not A Fan") Not A Fan
+            //- br
+            //- label(for='favoriteFighter') Favorite Fighter: 
+            //- select(name='favoriteFighter')
+            //-     option(selected = vgsEntry.favoriteFighter) #{vgsEntry.favoriteFighter}
+                
+            //-     option(value="Dead or Alive") Dead or Alive
+            //-     option(value="Mortal Kombat") Mortal Kombat
+            //-     option(value="Virtua Fighter") Virtua Fighter
+            //-     option(value="Street Fighter") Street Fighter
+            //-     option(value="Tekken") Tekken
+            //-     option(value="Soul Calibur") Soul Calibur
+            //-     option(value="Injustice") Injustice
+            //-     option(value="Marvel Vs Capcom") Marvel Vs Capcom
+            //-     option(value="Super Smash Bros") Super Smash Bros
+            //-     option(value="Not A Fan") Not A Fan
+            //- br
+            //- label(for='favoriteRacer') Favorite Racer: 
+            //- select(name='favoriteRacer')
+            //-     option(selected = vgsEntry.favoriteRacer) #{vgsEntry.favoriteRacer}
+                
+            //-     option(value="Burnout") Burnout
+            //-     option(value="Mario Kart") Mario Kart
+            //-     option(value="Need for Speed") Need for Speed
+            //-     option(value="Sega Allstar Racing") Sega Allstar Racing
+            //-     option(value="Not A Fan") Not A Fan
+            //- br
+            //- label(for='favoriteAction') Favorite Non-Shooter/Non-Fighter Action Game: 
+            //- select(name='favoriteAction')
+            //-     option(selected = vgsEntry.favoriteAction) #{vgsEntry.favoriteAction}
+                
+            //-     option(value="God of War") God of War
+            //-     option(value="Devil May Cry") Devil May Cry
+            //-     option(value="Bayonetta") Bayonetta
+            //-     option(value="Dante's Inferno") Dante's Inferno 
+            //-     option(value="Shadow of Morder") Shadow of Morder
+            //-     option(value="Ryse: Son of Rome") Ryse: Son of Rome
+            //-     option(value="Not A Fan") Not A Fan
+            //- br
+            //- label(for='favoriteAdventure') Favorite Adventure: 
+            //- select(name='favoriteAdventure')
+            //-     option(selected = vgsEntry.favoriteAdventure) #{vgsEntry.favoriteAdventure}
+                
+            //-     option(value="Uncharted") Uncharted
+            //-     option(value="Tomb Raider") Tomb Raider
+            //-     option(value="Myst") Myst
+            //-     option(value="Not A Fan") Not A Fan
+            //- br
+            //- label(for='preferedStrategy') Prefered Strategy: 
+            //- select(name='preferedStrategy')
+            //-     option(selected = vgsEntry.preferedStrategy) #{vgsEntry.preferedStrategy}
+                
+            //-     option(value="Halo Wars") Halo Wars
+            //-     option(value="Starcraft") Starcraft
+            //-     option(value="Warcraft") Warcraft
+            //-     option(value="Civilization") Civilization 
+            //-     option(value="Homeworld") Homeworld
+            //-     option(value="LotR: Battle for Middle Earth") LotR: Battle for Middle Earth
+            //-     option(value="Not A Fan") Not A Fan
+            //- br
+            //- label(for='preferedSurvival') Prefered Survival: 
+            //- select(name='preferedSurvival')
+            //-     option(selected = vgsEntry.preferedSurvival) #{vgsEntry.preferedSurvival}
+                
+            //-     option(value="7 Days to Die") 7 Days to Die
+            //-     option(value="Minecraft") Minecraft
+            //-     option(value="Savage Lands") Savage Lands
+            //-     option(value="Horizon: Zero Dawn") Horizon: Zero Dawn 
+            //-     option(value="The Long Dark") The Long Dark
+            //-     option(value="Not A Fan") Not A Fan
+            //- br
+            //- label(for='favoritePublisher') Favorite Publisher: 
+            //- select(name='favoritePublisher')
+            //-     option(selected = vgsEntry.favoritePublisher) #{vgsEntry.favoritePublisher}
+                
+            //-     option(value="Microsoft") Microsoft
+            //-     option(value="EA") EA
+            //-     option(value="Ubisoft") Ubisoft
+            //-     option(value="Bethesda") Bethesda
+            //-     option(value="Blizzard") Blizzard
+            //-     option(value="2K") 2K 
+            //-     option(value="Not A Fan") Not A Fan
+            //- br
+            div(class='input_div')
+                label(class='input_label' for='favoriteDeveloper') Favorite Developer: 
+                select(name='favoriteDeveloper')
+                    option(selected = vgsEntry.favoriteDeveloper) #{vgsEntry.favoriteDeveloper}
+                    
+                    option(value="Bungie") Bungie
+                    option(value="343 Industries") 343 Industries
+                    option(value="Bethesda") Bethesda
+                    option(value="Blizzard") Blizzard
+                    option(value="Gearbox") Gearbox
+                    option(value="Not A Fan") Not A Fan 
             br
-            label(for='preferedShooter') Prefered Shooter: 
-            select(name='preferedShooter')
-                option(selected = vgsEntry.preferedShooter) #{vgsEntry.preferedShooter}
+            //- label(for='favoriteCharacter') Favorite Character: 
+            //- select(name='favoriteCharacter')
+            //-     option(selected = vgsEntry.favoriteCharacter) #{vgsEntry.favoriteCharacter}
                 
-                option(value="Halo") Halo
-                option(value="Call of Duty") Call of Duty
-                option(value="Battlefield") Battlefield
-                option(value="Overwatch") Overwatch
-                option(value="Rainbow Six") Rainbow Six
-                option(value="Counter Strike") Counter Strike
-                option(value="Crysis") Crysis
-                option(value="Dark Void") Dark Void
-                option(value="DOOM") DOOM
-                option(value="Overwatch") Overwatch
-                option(value="Quake") Quake
-                option(value="Duke Nukem") Duke Nukem
-                option(value="Borderlands") Borderlands
-                option(value="Not A Fan") Not A Fan 
-            br
-            label(for='preferedOpenWorld') Prefered Open World: 
-            select(name='preferedOpenWorld')
-                option(selected = vgsEntry.preferedOpenWorld) #{vgsEntry.preferedOpenWorld}
-                
-                option(value="The Elder Scrolls") The Elder Scrolls
-                option(value="Fallout") Fallout
-                option(value="Assassin's Creed") Assassin's Creed
-                option(value="Horizon: Zero Dawn") Horizon: Zero Dawn
-                option(value="Final Fantasy") Final Fantasy
-                option(value="Fable") Fable
-                option(value="Not A Fan") Not A Fan 
-            br
-            label(for='favoriteSportsGame') Favorite Sports Game: 
-            select(name='favoriteSportsGame')
-                option(selected = vgsEntry.favoriteSportsGame) #{vgsEntry.favoriteSportsGame}
-                
-                option(value="Madden") Madden
-                option(value="FIFA") FIFA
-                option(value="NBA2K") NBA2K
-                option(value="Not A Fan") Not A Fan 
-            br
-            label(for='favoriteMOBA') Favorite MOBA: 
-            select(name='favoriteMOBA')
-                option(selected = vgsEntry.favoriteMOBA) #{vgsEntry.favoriteMOBA}
-                
-                option(value="League of Legends") League of Legends
-                option(value="DOTA") DOTA
-                option(value="Smite") Smite
-                option(value="Heroes of the Storm") Heroes of the Storm
-                option(value="Not A Fan") Not A Fan
-            br
-            label(for='favoriteFighter') Favorite Fighter: 
-            select(name='favoriteFighter')
-                option(selected = vgsEntry.favoriteFighter) #{vgsEntry.favoriteFighter}
-                
-                option(value="Dead or Alive") Dead or Alive
-                option(value="Mortal Kombat") Mortal Kombat
-                option(value="Virtua Fighter") Virtua Fighter
-                option(value="Street Fighter") Street Fighter
-                option(value="Tekken") Tekken
-                option(value="Soul Calibur") Soul Calibur
-                option(value="Injustice") Injustice
-                option(value="Marvel Vs Capcom") Marvel Vs Capcom
-                option(value="Super Smash Bros") Super Smash Bros
-                option(value="Not A Fan") Not A Fan
-            br
-            label(for='favoriteRacer') Favorite Racer: 
-            select(name='favoriteRacer')
-                option(selected = vgsEntry.favoriteRacer) #{vgsEntry.favoriteRacer}
-                
-                option(value="Burnout") Burnout
-                option(value="Mario Kart") Mario Kart
-                option(value="Need for Speed") Need for Speed
-                option(value="Sega Allstar Racing") Sega Allstar Racing
-                option(value="Not A Fan") Not A Fan
-            br
-            label(for='favoriteAction') Favorite Non-Shooter/Non-Fighter Action Game: 
-            select(name='favoriteAction')
-                option(selected = vgsEntry.favoriteAction) #{vgsEntry.favoriteAction}
-                
-                option(value="God of War") God of War
-                option(value="Devil May Cry") Devil May Cry
-                option(value="Bayonetta") Bayonetta
-                option(value="Dante's Inferno") Dante's Inferno 
-                option(value="Shadow of Morder") Shadow of Morder
-                option(value="Ryse: Son of Rome") Ryse: Son of Rome
-                option(value="Not A Fan") Not A Fan
-            br
-            label(for='favoriteAdventure') Favorite Adventure: 
-            select(name='favoriteAdventure')
-                option(selected = vgsEntry.favoriteAdventure) #{vgsEntry.favoriteAdventure}
-                
-                option(value="Uncharted") Uncharted
-                option(value="Tomb Raider") Tomb Raider
-                option(value="Myst") Myst
-                option(value="Not A Fan") Not A Fan
-            br
-            label(for='preferedStrategy') Prefered Strategy: 
-            select(name='preferedStrategy')
-                option(selected = vgsEntry.preferedStrategy) #{vgsEntry.preferedStrategy}
-                
-                option(value="Halo Wars") Halo Wars
-                option(value="Starcraft") Starcraft
-                option(value="Warcraft") Warcraft
-                option(value="Civilization") Civilization 
-                option(value="Homeworld") Homeworld
-                option(value="LotR: Battle for Middle Earth") LotR: Battle for Middle Earth
-                option(value="Not A Fan") Not A Fan
-            br
-            label(for='preferedSurvival') Prefered Survival: 
-            select(name='preferedSurvival')
-                option(selected = vgsEntry.preferedSurvival) #{vgsEntry.preferedSurvival}
-                
-                option(value="7 Days to Die") 7 Days to Die
-                option(value="Minecraft") Minecraft
-                option(value="Savage Lands") Savage Lands
-                option(value="Horizon: Zero Dawn") Horizon: Zero Dawn 
-                option(value="The Long Dark") The Long Dark
-                option(value="Not A Fan") Not A Fan
-            br
-            label(for='favoritePublisher') Favorite Publisher: 
-            select(name='favoritePublisher')
-                option(selected = vgsEntry.favoritePublisher) #{vgsEntry.favoritePublisher}
-                
-                option(value="Microsoft") Microsoft
-                option(value="EA") EA
-                option(value="Ubisoft") Ubisoft
-                option(value="Bethesda") Bethesda
-                option(value="Blizzard") Blizzard
-                option(value="2K") 2K 
-                option(value="Not A Fan") Not A Fan
-            br
-            label(for='favoriteDeveloper') Favorite Developer: 
-            select(name='favoriteDeveloper')
-                option(selected = vgsEntry.favoriteDeveloper) #{vgsEntry.favoriteDeveloper}
-                
-                option(value="Bungie") Bungie
-                option(value="343 Industries") 343 Industries
-                option(value="Bethesda") Bethesda
-                option(value="Blizzard") Blizzard
-                option(value="Gearbox") Gearbox
-                option(value="Not A Fan") Not A Fan 
-            br
-            label(for='favoriteCharacter') Favorite Character: 
-            select(name='favoriteCharacter')
-                option(selected = vgsEntry.favoriteCharacter) #{vgsEntry.favoriteCharacter}
-                
-                option(value="Master Chief Petty Officer John 117") Master Chief Petty Officer John 117
-                option(value="Ezio Auditore de Florence") Ezio Auditore de Florence
-                option(value="Samus") Samus
-                option(value="Link") Link
-                option(value="Kirby") Kirby
-                option(value="King Varian Wrynn") King Varian Wrynn
-                option(value="Cloud Strife") Cloud Strife
-                option(value="Soap MacTavish") Soap MacTavish
-                option(value="Sonic the Hedgehog") Sonic the Hedgehog
-                option(value="Not A Fan") Not A Fan 
-            br
-            label(for='favoriteConsoleCreator') Favorite Console Creator: 
-            select(name='favoriteConsoleCreator')
-                option(selected = vgsEntry.favoriteConsoleCreator) #{vgsEntry.favoriteConsoleCreator}
-                
-                option(value="Nintendo") Nintendo
-                option(value="Sega") Sega
-                option(value="Microsoft") Microsoft
-                option(value="Sony") Sony
-                option(value="Not A Fan") Not A Fan 
+            //-     option(value="Master Chief Petty Officer John 117") Master Chief Petty Officer John 117
+            //-     option(value="Ezio Auditore de Florence") Ezio Auditore de Florence
+            //-     option(value="Samus") Samus
+            //-     option(value="Link") Link
+            //-     option(value="Kirby") Kirby
+            //-     option(value="King Varian Wrynn") King Varian Wrynn
+            //-     option(value="Cloud Strife") Cloud Strife
+            //-     option(value="Soap MacTavish") Soap MacTavish
+            //-     option(value="Sonic the Hedgehog") Sonic the Hedgehog
+            //-     option(value="Not A Fan") Not A Fan 
+            //- br
+            div(class='input_div')
+                label(class='input_label' for='favoriteConsoleCreator') Favorite Console Creator: 
+                select(name='favoriteConsoleCreator')
+                    option(selected = vgsEntry.favoriteConsoleCreator) #{vgsEntry.favoriteConsoleCreator}
+                    
+                    option(value="Nintendo") Nintendo
+                    option(value="Sega") Sega
+                    option(value="Microsoft") Microsoft
+                    option(value="Sony") Sony
+                    option(value="Not A Fan") Not A Fan 
             br
             input(type='submit', value='Update Entry')
 
