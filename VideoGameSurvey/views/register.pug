@@ -1,0 +1,23 @@
+doctype
+html
+    head
+        title Register User
+        link(rel='stylesheet', href='/styles/style.css')
+    body
+        form(id='form', method='post', action='/account')
+            label(for='username') User Name: 
+            input(type='text', name='username')
+            br
+            label(for='password') Password: 
+            input(type='text', name='password')
+            br
+            label(for='userLevel') User Level: 
+            input(type='text', name='userLevel')
+            br
+            label(for='email') Email: 
+            input(type='text', name='email')
+            br
+            label(for='age') Age: 
+            input(type='text', name='age')
+            br
+            input(type='submit', value='Register account')

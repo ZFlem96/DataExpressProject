@@ -3,6 +3,14 @@ var mongoose = require('mongoose'),
     bcrypt = require('bcrypt'),
     SALT_WORK_FACTOR = 10;
 
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/data');
+
+var mdb = mongoose.connection;
+mdb.on('error', console.error.bind(console, 'connection error:'));
+mdb.once('open', function (callback) {    
+});
+
 var UserSchema = new Schema({
     username: { type: String, required: true, index: { unique: true } },
     password: { type: String, required: true },
@@ -12,6 +20,8 @@ var UserSchema = new Schema({
     answers:{type: JSON},
     hash:{type: String}
 });
+
+var Entry = mongoose.model('VideoGameSurvey', UserSchema);
 
 UserSchema.pre('save', function(next) {
     var user = this;
@@ -41,4 +51,19 @@ UserSchema.methods.comparePassword = function(candidatePassword, cb) {
     });
 };
 
-module.exports = mongoose.model('User', UserSchema);
+exports = mongoose.model('User', UserSchema);
+
+exports.register = function(req,res){
+    var userEntry = new Entry({
+        username: req.body.username,
+        password: req.body.password,
+        userlevel: req.body.userlevel,
+        email: req.body.email,
+        age: req.body.age
+    });
+    userEntry.save(function(err, userEntry){
+        if(err) return console.error(err);
+        console.log(req.body.username + ' added');
+    });
+    res.redirect('/');
+};

@@ -8,11 +8,8 @@ var express = require('express'),
     mongodb = require('mongodb'),
     bcrypt = require('bcrypt-nodejs'),
     cookieParser = require('cookie-parser'),
-    bodyParser = require('body-parser'),
-    questions = require('./public/questions.json'),
+    bodyParser = require('body-parser');
     user = require('./public/scripts/user.js');
-    // var displayChartsModule = require('./public/scripts/displayCharts.js');
-    // var script = new displayChartsModule.displayCharts();
 
 //var salt = bcrypt.genSaltSync(10);
 //var hash = bcrypt.hashSync("",salt);
@@ -25,7 +22,6 @@ app.use(express.static(path.join(__dirname + '/public')));
 
 var urlencodedParser = bodyParser.urlencoded({ extended: true })
 
-// app.get('/', route.getCount);
 app.get('/', route.home);
 app.get('/database', route.index);
 app.get('/create', route.create);
