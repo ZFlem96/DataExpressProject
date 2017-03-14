@@ -188,8 +188,3 @@ function checkForBlizzard(count){
 function checkFor2K(count){
     return count.favoriteDeveloper == "2K";
 }
-// function fillGenreArray(count){
-// for(var x =0;x<count.favoriteGameGenre;x++){
-
-// }
-// }
