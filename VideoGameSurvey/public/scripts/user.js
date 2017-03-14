@@ -16,10 +16,12 @@ var UserSchema = new Schema({
     password: { type: String, required: true },
     userlevel: { type: String},
     email: { type: String},
-    age:{ type: GLuint},
+    age:{ type: String},
     answers:{type: JSON},
     hash:{type: String}
 });
+
+var Entry = mongoose.model('VideoGameSurvey', UserSchema);
 
 UserSchema.pre('save', function(next) {
     var user = this;
@@ -49,4 +51,19 @@ UserSchema.methods.comparePassword = function(candidatePassword, cb) {
     });
 };
 
-module.exports = mongoose.model('User', UserSchema);
+exports = mongoose.model('User', UserSchema);
+
+exports.register = function(req,res){
+    var userEntry = new Entry({
+        username: req.body.username,
+        password: req.body.password,
+        userlevel: req.body.userlevel,
+        email: req.body.email,
+        age: req.body.age
+    });
+    userEntry.save(function(err, userEntry){
+        if(err) return console.error(err);
+        console.log(req.body.username + ' added');
+    });
+    res.redirect('/');
+};
